@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxuryHome - Ремонт квартир</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #555;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav a:hover {
+      background-color: #444;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .section {
+      padding: 40px 20px;
+      background-color: white;
+      margin-bottom: 10px;
+    }
+    .services ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .contact-btn {
+      background-color: #d4af37;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .contact-btn:hover {
+      background-color: #bfa128;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      background-color: #d4af37;
+      color: black;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    input[type="submit"]:hover {
+      background-color: #bfa128;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LuxuryHome</h1>
+    <p>Профессиональный ремонт квартир в Москве</p>
+  </header>
+
+  <nav>
+    <a href="#about">О нас</a>
+    <a href="#services">Услуги</a>
+    <a href="#portfolio">Портфолио</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Создаем комфорт и стиль в вашем доме</h2>
+    <a href="#contact" class="contact-btn">Оставить заявку</a>
+  </div>
+
+  <section class="section" id="about">
+    <h2>О компании</h2>
+    <p>LuxuryHome — это команда опытных мастеров, предоставляющих полный спектр услуг по ремонту и отделке квартир. Работаем по Москве и области. Гарантия качества и индивидуальный подход к каждому клиенту.</p>
+  </section>
+
+  <section class="section services" id="services">
+    <h2>Наши услуги</h2>
+    <ul>
+      <li>Косметический и капитальный ремонт</li>
+      <li>Отделка стен и потолков</li>
+      <li>Укладка плитки, ламината, паркета</li>
+      <li>Электромонтажные и сантехнические работы</li>
+      <li>Дизайн интерьера</li>
+    </ul>
+  </section>
+
+  <section class="section" id="portfolio">
+    <h2>Наши работы</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" alt="Проект 1">
+      <img src="https://images.unsplash.com/photo-1600585152934-68f8b7230d1f" alt="Проект 2">
+      <img src="https://images.unsplash.com/photo-1600047503821-7b2f3ebceacb" alt="Проект 3">
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Связаться с нами</h2>
+    <p>Телефон: <strong>+7 (999) 123-45-67</strong></p>
+    <p>Email: <strong>info@luxuryhome.ru</strong></p>
+    <p>Адрес: Москва, ул. Ремонтная, д. 12</p>
+    <a href="https://t.me/yourusername" class="contact-btn">Написать в Telegram</a>
+    <form action="https://formsubmit.co/your-email@example.com" method="POST">
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="email" name="email" placeholder="Ваш email" required>
+      <textarea name="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+      <input type="submit" value="Отправить">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LuxuryHome. Все права защищены.</p>
+  </footer>
+</body>
+</html>
